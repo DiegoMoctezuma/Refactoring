@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DiegoMoctezuma/Refactoring/issues"
   },
-  "homepage": "https://github.com/DiegoMoctezuma/Refactoring#readme"
+  "homepage": "https://github.com/DiegoMoctezuma/Refactoring#readme",
+  "dependencies": {
+    "jest": "^28.0.3"
+  }
 }
