@@ -5,6 +5,6 @@ describe("Prueba FizzBuzzService", () => {
     const explorer1 = {name: "Explorer1", score: 15};
     FizzbuzzService.applyValidationInExplorer(explorer1);
 
-    expect(explorer1).toEqual(expect.objectContaining({trick: "FIZZBUZZ"}));
+    expect(explorer1).toEqual(expect.objectContaining({trick: "prueba"}));
   });
 });
