@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const ExplorerService = require("../../lib/services/explorerService");
 const Reader = require("../../lib/utils/reader");
 const explorers = Reader.readJsonFile("explorers.json");
@@ -25,5 +26,11 @@ describe("Prueba explorerService", () => {
         );
 
         expect(users[7]).toBe("ajolonauta13");
+    });
+
+    test("4. Filtro de los explorers por stacks", () => {
+        const stacksexplorer = ExplorerService.getSatckExplorers(explorers,"javascript");
+
+        expect(stacksexplorer[10].stacks[0]).toBe("javascript");
     });
 });
