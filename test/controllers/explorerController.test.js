@@ -27,8 +27,4 @@ describe("Pruebas de ExplorerController", () => {
         const numero4 = ExplorerController.applyValidationInNumber(1);
         expect(numero4).toBe(1);
     });
-    test("5. Filtrando explorers por stack", () => {
-        const stacksExplorers = ExplorerController.getSatckExplorers("javascript");
-        expect(stacksExplorers[10].stacks[0]).toBe("javascript");
-    });
 });
