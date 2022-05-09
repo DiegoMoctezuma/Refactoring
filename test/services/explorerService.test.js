@@ -26,4 +26,9 @@ describe("Prueba explorerService", () => {
 
         expect(users[7]).toBe("ajolonauta13");
     });
+
+    test("4. Nombres de los explorers por misión", () => {
+        const names = ExplorerService.getExplorersNamesByMission(explorers,"java");
+        expect(names).toContain("Woopa7");
+    });
 });
