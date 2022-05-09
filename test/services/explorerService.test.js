@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const ExplorerService = require("../../lib/services/explorerService");
 const Reader = require("../../lib/utils/reader");
 const explorers = Reader.readJsonFile("explorers.json");

@@ -1,12 +1,14 @@
-/* eslint-disable no-undef */
 const FizzbuzzService = require("../../lib/services/fizzbuzzService");
 
 describe("Prueba FizzBuzzService", () => {
     test("1. Añadiendo FizzBuzz a los explorers", () => {
-        const explorer1 = {name: "Explorer1", score: 15};
-        const explorerFizzBuzz = FizzbuzzService.applyValidationInExplorer(explorer1);
+        const explorer1 = { name: "Explorer1", score: 15 };
+        const explorerFizzBuzz =
+			FizzbuzzService.applyValidationInExplorer(explorer1);
 
-        expect(explorerFizzBuzz).toEqual(expect.objectContaining({trick: "FIZZBUZZ"}));
+        expect(explorerFizzBuzz).toEqual(
+            expect.objectContaining({ trick: "FIZZBUZZ" })
+        );
     });
     test("2. Probando FizzBuzz con un número", () => {
         const number1 = FizzbuzzService.applyValidationInNumber(15);
