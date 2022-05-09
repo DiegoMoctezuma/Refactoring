@@ -1,30 +1,32 @@
 {
-  "name": "refactoring",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DiegoMoctezuma/Refactoring.git"
-  },
-  "author": "Rafael Moctezuma",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DiegoMoctezuma/Refactoring/issues"
-  },
-  "homepage": "https://github.com/DiegoMoctezuma/Refactoring#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "jest": "^26.0.0",
-    "node-telegram-bot-api": "^0.57.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.14.0"
-  }
+	"name": "refactoring",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"linter": "node ./node_modules/eslint/bin/eslint.js .",
+		"linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+		"server": "node ./lib/server.js",
+		"bot": "node ./lib/bot.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DiegoMoctezuma/Refactoring.git"
+	},
+	"author": "Rafael Moctezuma",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/DiegoMoctezuma/Refactoring/issues"
+	},
+	"homepage": "https://github.com/DiegoMoctezuma/Refactoring#readme",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"express": "^4.18.1",
+		"jest": "^26.0.0",
+		"node-telegram-bot-api": "^0.57.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.14.0"
+	}
 }
